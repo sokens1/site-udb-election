@@ -1,0 +1,77 @@
+.final-section {
+  width: 100%;
+  background: white;
+}
+
+/* Section image de l'affiche finale */
+.final-poster-section {
+  background: white;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.final-poster-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.final-poster-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  object-fit: cover;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .final-poster-section {
+    padding: 0;
+  }
+  
+  .final-poster-container {
+    padding: 0;
+  }
+  
+  .final-poster-image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .final-poster-section {
+    padding: 0;
+  }
+  
+  .final-poster-container {
+    padding: 0;
+  }
+  
+  .final-poster-image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .final-poster-section {
+    padding: 0;
+  }
+  
+  .final-poster-container {
+    padding: 0;
+  }
+  
+  .final-poster-image {
+    width: 100%;
+    border-radius: 0;
+  }
+}

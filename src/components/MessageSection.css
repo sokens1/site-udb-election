@@ -1,0 +1,77 @@
+.message-section {
+  width: 100%;
+  background: white;
+}
+
+/* Section image de l'affiche complète */
+.poster-image-section {
+  background: white;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.poster-image-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.poster-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  object-fit: cover;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .poster-image-section {
+    padding: 0;
+  }
+  
+  .poster-image-container {
+    padding: 0;
+  }
+  
+  .poster-image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .poster-image-section {
+    padding: 0;
+  }
+  
+  .poster-image-container {
+    padding: 0;
+  }
+  
+  .poster-image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .poster-image-section {
+    padding: 0;
+  }
+  
+  .poster-image-container {
+    padding: 0;
+  }
+  
+  .poster-image {
+    width: 100%;
+    border-radius: 0;
+  }
+}

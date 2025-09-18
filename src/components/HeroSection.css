@@ -1,0 +1,293 @@
+.hero-section {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Section blanche - En-tête */
+.header-section {
+  background: white;
+  padding: 80px 0 60px 0;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.header-content {
+  width: 100%;
+  text-align: center;
+}
+
+.title-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.main-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.separator {
+  width: 4px;
+  height: 80px;
+  background: #00A651;
+}
+
+.program-text {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #00A651;
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+}
+
+.subtitle-section {
+  margin-top: 20px;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00A651;
+  text-transform: uppercase;
+  margin: 10px 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Section bleue - Candidat */
+.candidate-section {
+  background: #1A4A8A;
+  padding: 80px 0;
+  color: white;
+}
+
+.candidate-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.candidate-photo {
+  flex-shrink: 0;
+}
+
+.candidate-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 6px solid white;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  display: block;
+}
+
+.candidate-info {
+  flex: 1;
+}
+
+.candidate-name {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0 0 15px 0;
+  font-family: Arial, sans-serif;
+}
+
+.candidate-role {
+  font-size: 1.3rem;
+  margin: 0 0 30px 0;
+  font-family: Arial, sans-serif;
+}
+
+.slogan {
+  margin: 30px 0;
+}
+
+.quote-mark {
+  font-size: 4rem;
+  color: #FFD700;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.slogan-text {
+  font-size: 2.2rem;
+  font-weight: bold;
+  font-style: italic;
+  color: #FFD700;
+  font-family: Arial, sans-serif;
+}
+
+.program-summary {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 30px 0;
+  font-family: Arial, sans-serif;
+}
+
+.separator-line {
+  width: 60%;
+  height: 3px;
+  background: white;
+  margin: 30px 0;
+}
+
+/* Section bleue - Colistiers */
+.colistiers-section {
+  background: #1A4A8A;
+  padding: 80px 0;
+  color: white;
+  position: relative;
+}
+
+.colistiers-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #FFD700;
+  margin: 0 0 50px 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.colistiers-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.colistiers-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.colistier-item {
+  font-size: 1.2rem;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.colistier-item:last-child {
+  border-bottom: none;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .candidate-content {
+    gap: 40px;
+  }
+  
+  .candidate-name {
+    font-size: 2.5rem;
+  }
+  
+  .slogan-text {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    margin-top: 40px;
+  }
+  
+  .header-section {
+    padding: 60px 0 40px 0;
+  }
+  
+  .main-title {
+    font-size: 2rem;
+  }
+  
+  .program-text {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .candidate-section {
+    padding: 60px 0;
+  }
+  
+  .candidate-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+  
+  .candidate-name {
+    font-size: 2rem;
+  }
+  
+  .slogan-text {
+    font-size: 1.5rem;
+  }
+  
+  .colistiers-section {
+    padding: 60px 0;
+  }
+  
+  .colistiers-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .colistiers-title {
+    font-size: 2rem;
+  }
+  
+  .colistier-item {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  .title-section {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .separator {
+    width: 60px;
+    height: 4px;
+  }
+  
+  .main-title {
+    font-size: 1.6rem;
+  }
+  
+  .program-text {
+    font-size: 1.6rem;
+  }
+  
+  .candidate-image {
+    width: 150px;
+    height: 150px;
+  }
+}
