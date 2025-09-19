@@ -53,7 +53,7 @@ const Navbar = () => {
               scrollToSection('candidat');
             }}
           >
-            Candidat
+            Liste
           </a>
           <a 
             href="#axe1" 
