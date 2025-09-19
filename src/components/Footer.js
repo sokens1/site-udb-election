@@ -21,7 +21,7 @@ const Footer = () => {
               <h4>Navigation</h4>
               <ul>
                 <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#candidat">Candidat</a></li>
+                <li><a href="#candidat">Liste</a></li>
                 <li><a href="#axe1">Programme</a></li>
                 <li><a href="#message">Message</a></li>
               </ul>
