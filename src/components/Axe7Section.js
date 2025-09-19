@@ -1,10 +1,11 @@
 import React from 'react';
 import './Axe7Section.css';
 import UDBLogo from './UDBLogo';
+import quoteIcon from '../images/icone-grife.png';
 
 const Axe7Section = () => {
   return (
-    <div className="axe7-section" id="axe7">
+    <div className="axe7-section" id="axe7" style={{'--quote-icon': `url(${quoteIcon})`}}>
       {/* Section blanche - Contenu principal */}
       <div className="content-section">
         <div className="container">
@@ -50,10 +51,7 @@ const Axe7Section = () => {
       {/* Section citation et photo unifiée */}
       <div className="unified-section">
         <div className="quote-container">
-          <div className="quote-marks">"</div>
-          <div className="quote-text">
-            La sécurité est une responsabilité partagée qui renforce la fraternité et la confiance.
-          </div>
+          <div className="quote-marks"></div><div className="quote-text">La sécurité est une responsabilité partagée qui renforce la fraternité et la confiance.</div>
         </div>
         <div className="photo-container">
           <img 

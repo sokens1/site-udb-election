@@ -1,10 +1,11 @@
 import React from 'react';
 import './Axe1Page.css';
 import UDBLogo from './UDBLogo';
+import quoteIcon from '../images/icone-grife.png';
 
 const Axe1Page = () => {
   return (
-    <div className="axe1-page">
+    <div className="axe1-page" style={{'--quote-icon': `url(${quoteIcon})`}}>
       {/* Section blanche - Contenu principal */}
       <div className="content-section">
         <div className="content-header">
@@ -41,10 +42,7 @@ const Axe1Page = () => {
           </div>
 
           <div className="quote-section">
-            <div className="quote-marks">"</div>
-            <p className="quote-text">
-              Une mairie ouverte, moderne et connectée, qui rend des comptes et agit au plus près des citoyens.
-            </p>
+            <div className="quote-marks"></div><p className="quote-text">Une mairie ouverte, moderne et connectée, qui rend des comptes et agit au plus près des citoyens.</p>
           </div>
         </div>
       </div>

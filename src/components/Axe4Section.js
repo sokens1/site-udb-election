@@ -1,10 +1,11 @@
 import React from 'react';
 import './Axe4Section.css';
 import UDBLogo from './UDBLogo';
+import quoteIcon from '../images/icone-grife.png';
 
 const Axe4Section = () => {
   return (
-    <div className="axe4-section" id="axe4">
+    <div className="axe4-section" id="axe4" style={{'--quote-icon': `url(${quoteIcon})`}}>
       {/* Section blanche - Contenu principal */}
       <div className="content-section">
         <div className="container">
@@ -52,10 +53,7 @@ const Axe4Section = () => {
       {/* Section citation et photo unifiée */}
       <div className="unified-section">
         <div className="quote-container">
-          <div className="quote-marks">"</div>
-          <div className="quote-text">
-            Aucun enfant, aucun jeune ne doit rester sans formation ni opportunité professionnelle.
-          </div>
+          <div className="quote-marks"></div><div className="quote-text">Aucun enfant, aucun jeune ne doit rester sans formation ni opportunité professionnelle.</div>
         </div>
         <div className="photo-container">
           <img 

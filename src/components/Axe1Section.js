@@ -1,18 +1,18 @@
 import React from 'react';
 import './Axe1Section.css';
 import UDBLogo from './UDBLogo';
+import quoteIcon from '../images/icone-grife.png';
 
 const Axe1Section = () => {
   return (
-    <div className="axe1-section" id="axe1">
+    <div className="axe1-section" id="axe1" style={{'--quote-icon': `url(${quoteIcon})`}}>
       {/* Section blanche - Contenu principal */}
       <div className="content-section">
         <div className="container">
           <div className="content-header">
             <div className="title-section">
               <h1 className="main-title">
-                AXE 1 – GOUVERNANCE CITOYENNE ET{' '}
-                <span className="green-text">TRANSPARENCE</span>
+                AXE 1 – <span className="green-text">GOUVERNANCE CITOYENNE ET TRANSPARENCE</span>
               </h1>
               <p className="subtitle">
                 *Vision nationale : Digitalisation & Lutte contre la corruption*
@@ -48,10 +48,7 @@ const Axe1Section = () => {
       {/* Section citation et photo unifiée */}
       <div className="unified-section">
         <div className="quote-container">
-          <div className="quote-marks">"</div>
-          <div className="quote-text">
-            Une mairie ouverte, moderne et connectée, qui rend des comptes et agit au plus près des citoyens.
-          </div>
+          <div className="quote-marks"></div><div className="quote-text">Une mairie ouverte, moderne et connectée, qui rend des comptes et agit au plus près des citoyens.</div>
         </div>
         <div className="photo-container">
           <img 

@@ -1,10 +1,11 @@
 import React from 'react';
 import './Axe6Section.css';
 import UDBLogo from './UDBLogo';
+import quoteIcon from '../images/icone-grife.png';
 
 const Axe6Section = () => {
   return (
-    <div className="axe6-section" id="axe6">
+    <div className="axe6-section" id="axe6" style={{'--quote-icon': `url(${quoteIcon})`}}>
       {/* Section blanche - Contenu principal */}
       <div className="content-section">
         <div className="container">
@@ -49,10 +50,7 @@ const Axe6Section = () => {
       {/* Section citation et photo unifiée */}
       <div className="unified-section">
         <div className="quote-container">
-          <div className="quote-marks">"</div>
-          <div className="quote-text">
-            Un environnement sain, c'est une santé meilleure et un cadre de vie plus attractif pour tous.
-          </div>
+          <div className="quote-marks"></div><div className="quote-text">Un environnement sain, c'est une santé meilleure et un cadre de vie plus attractif pour tous.</div>
         </div>
         <div className="photo-container">
           <img 

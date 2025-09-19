@@ -1,10 +1,11 @@
 import React from 'react';
 import './Axe3Section.css';
 import UDBLogo from './UDBLogo';
+import quoteIcon from '../images/icone-grife.png';
 
 const Axe3Section = () => {
   return (
-    <div className="axe3-section" id="axe3">
+    <div className="axe3-section" id="axe3" style={{'--quote-icon': `url(${quoteIcon})`}}>
       {/* Section blanche - Contenu principal */}
       <div className="content-section">
         <div className="container">
@@ -53,10 +54,7 @@ const Axe3Section = () => {
       {/* Section citation et photo unifiée */}
       <div className="unified-section">
         <div className="quote-container">
-          <div className="quote-marks">"</div>
-          <div className="quote-text">
-            Une population en bonne santé, active et épanouie est la véritable richesse du 1er arrondissement.
-          </div>
+          <div className="quote-marks"></div><div className="quote-text">Une population en bonne santé, active et épanouie est la véritable richesse du 1er arrondissement.</div>
         </div>
         <div className="photo-container">
           <img 

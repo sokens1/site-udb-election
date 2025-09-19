@@ -1,10 +1,11 @@
 import React from 'react';
 import './Axe2Section.css';
 import UDBLogo from './UDBLogo';
+import quoteIcon from '../images/icone-grife.png';
 
 const Axe2Section = () => {
   return (
-    <div className="axe2-section" id="axe2">
+    <div className="axe2-section" id="axe2" style={{'--quote-icon': `url(${quoteIcon})`}}>
       {/* Section blanche - Contenu principal */}
       <div className="content-section">
         <div className="container">
@@ -50,10 +51,7 @@ const Axe2Section = () => {
       {/* Section citation et photo unifiée */}
       <div className="unified-section">
         <div className="quote-container">
-          <div className="quote-marks">"</div>
-          <div className="quote-text">
-            Des infrastructures solides, un éclairage fiable, une eau saine et un assainissement durable : la base d'une ville moderne.
-          </div>
+          <div className="quote-marks"></div><div className="quote-text">Des infrastructures solides, un éclairage fiable, une eau saine et un assainissement durable : la base d'une ville moderne.</div>
         </div>
         <div className="photo-container">
           <img 

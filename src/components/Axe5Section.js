@@ -1,10 +1,11 @@
 import React from 'react';
 import './Axe5Section.css';
 import UDBLogo from './UDBLogo';
+import quoteIcon from '../images/icone-grife.png';
 
 const Axe5Section = () => {
   return (
-    <div className="axe5-section" id="axe5">
+    <div className="axe5-section" id="axe5" style={{'--quote-icon': `url(${quoteIcon})`}}>
       {/* Section blanche - Contenu principal */}
       <div className="content-section">
         <div className="container">
@@ -61,10 +62,7 @@ const Axe5Section = () => {
       {/* Section citation et photo unifiée */}
       <div className="unified-section">
         <div className="quote-container">
-          <div className="quote-marks">"</div>
-          <div className="quote-text">
-            Les femmes sont le moteur de l'économie de proximité et de la souveraineté alimentaire.
-          </div>
+          <div className="quote-marks"></div><div className="quote-text">Les femmes sont le moteur de l'économie de proximité et de la souveraineté alimentaire.</div>
         </div>
         <div className="photo-container">
           <img 

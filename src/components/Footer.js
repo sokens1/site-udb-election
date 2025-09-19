@@ -21,7 +21,7 @@ const Footer = () => {
               <h4>Navigation</h4>
               <ul>
                 <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#candidat">Liste</a></li>
+                <li><a href="#candidat">Liste UDB</a></li>
                 <li><a href="#axe1">Programme</a></li>
                 <li><a href="#message">Message</a></li>
               </ul>
@@ -49,7 +49,7 @@ const Footer = () => {
         </div>
         
         <div className="footer-bottom">
-          <p>&copy; {currentYear} UDB - Union Démocratique des Bâtisseurs. Tous droits réservés.</p>
+          <p>&copy; {currentYear} UDB - Election Locale 2025 / 1er Arrondissement de Moanda. Tous droits réservés.</p>
         </div>
       </div>
     </footer>
