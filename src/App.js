@@ -11,6 +11,7 @@ import Axe6Section from './components/Axe6Section';
 import Axe7Section from './components/Axe7Section';
 import MessageSection from './components/MessageSection';
 import FinalSection from './components/FinalSection';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <Axe7Section />
       <MessageSection />
       <FinalSection />
+      <Footer />
     </div>
   );
 }

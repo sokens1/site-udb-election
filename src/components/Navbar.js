@@ -4,10 +4,11 @@ import UDBLogo from './UDBLogo';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 20);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -19,6 +20,11 @@ const Navbar = () => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+    setIsMobileMenuOpen(false);
+  };
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   return (
@@ -28,7 +34,7 @@ const Navbar = () => {
           <UDBLogo />
         </div>
         
-        <div className="navbar-menu">
+        <div className={`navbar-menu ${isMobileMenuOpen ? 'active' : ''}`}>
           <a 
             href="#accueil" 
             className="navbar-link"
@@ -70,6 +76,16 @@ const Navbar = () => {
             Message
           </a>
         </div>
+
+        <button 
+          className="mobile-menu-toggle"
+          onClick={toggleMobileMenu}
+          aria-label="Menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </nav>
   );
